@@ -1,0 +1,154 @@
+/* WEB120 Final */
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body{
+  background-image: url("../images/greenhouse.jpg");
+}
+
+div.wrapper,footer {
+    width:80%;
+    margin:auto;
+    background-color:#fff;
+    overflow:auto;
+    position: static;
+}
+
+section {
+    float:left;
+    width:60%;
+    padding-left:5%;
+    padding-right: 2.5%;
+    padding-top: 2.5%;
+}
+
+aside {
+    float:right;
+    width:26%;
+    padding-right:2.5%;
+    padding-top: 5%;
+}
+
+#test{
+    margin:2em;
+}
+
+nav{
+    background:#a93439; }
+
+#logo, #cssmenu {
+    margin: auto;
+    width: 777px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+    padding: 1em;
+    font-family: Helvetica, 'Open Sans', sans-serif;
+}
+
+p {
+    margin:1em .8em;
+    font-size: 19px;
+    font-family: Helvetica, 'Open Sans', sans-serif;
+}
+
+div.dot iframe {
+    border:0;
+}
+
+Iframe {
+width: 100%;
+
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 1em;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* START Global Embed Responsively Rules! */
+div.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+} 
+
+div.embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.embed-container.agenda-view {
+    display:none;
+}
+
+/* END Global Embed Responsively Rules! */
+
+footer {
+    text-align:right;
+    text-transform:uppercase;
+    clear:both;
+}
+
+footer p {
+    padding: .2%;
+}
+
+footer a {
+    color:black;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:white;
+    background-color:lightgray;
+}
+    
+
+/* Phat PHONE Rules! */
+@media all and (max-width:860px) {
+        
+    #logo img{
+        width: 100%;}
+    
+    #logo, #cssmenu{
+        width: 80%;
+        margin: auto;}
+    
+    aside { 
+        float: none;}
+    
+    div.wrapper {
+        position: static;}
+    
+    
+    /* Show Agenda View Calendar */
+    div.embed-container.agenda-view {
+        display:block;}
+    
+    /* Hide Month View Calendar */
+    div.embed-container.month-view {
+        display:none;}
+}
